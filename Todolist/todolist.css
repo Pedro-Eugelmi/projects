@@ -1,0 +1,318 @@
+
+:root {
+    --bodycolor:#282A3A ;
+    --golden:rgb(214, 157, 70);
+    --blue: rgb(0, 74, 173);
+    --hover: #2b2c3b;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--bodycolor);
+}
+.header 
+{
+    background-color: black;
+    width: 100%;
+    height: auto ;
+    display: flex;
+    align-items: center;
+}
+
+.logo 
+{
+ width: 200px;
+ height: auto;
+ margin-left: 50%;
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+.logo:hover
+{
+    background-color: #1f202c;
+    border-radius: 10px;
+}
+
+.toDoListArea{
+    width: 100%;
+    height: auto;
+    border-left: black solid 1px;
+    min-height: 500px;
+}
+.main
+{padding-left: 10%;
+padding-right: 10%;}
+
+.addTask {
+    width: 100%;
+    height: 100px;
+    border: solid black 1px;
+    border-top: none;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.addTaskButton 
+{ border: rgb(0, 74, 173) solid 2.5px;
+width: 90px;
+height: 30px;
+cursor: pointer;
+color:rgb(0, 74, 173) ;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.addTaskButton img 
+{
+    height: 20px;
+    width: auto;
+}
+
+.addTaskButton:hover 
+{
+    background-color: #26283d;
+    padding: 2px;
+}
+
+.addTaskPopUp{
+    width: 350px;
+    height: 400px;
+    background-color: #282A3A;
+    display: none;
+    transition: ease 1s;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    margin-right: -200px;
+    margin-top: -175px;
+    z-index: 999;
+    border-radius: 5%;
+    border: solid 2px rgb(44, 41, 41);
+}
+.taskPopUpTitle 
+{
+    width: 100%;
+    height: 40px;
+    background-color: var(--golden);
+    text-align: center;
+    color: whitesmoke;
+}
+
+.taskName 
+{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 10px;}
+
+.taskName label
+{color: white;}
+.taskName input 
+{
+
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+
+}
+
+.taskDescription 
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    resize: none;
+
+}
+.taskDescription textarea 
+{  border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+}
+.popupLabel
+{color: white;
+font-family: Arial, Helvetica, sans-serif;}
+
+.taskColor 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.popupexitbutton{
+    border: var(--blue) 2px solid;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder ;
+    margin-right: 5%;
+    padding: 10px;
+    color: var(--blue);
+    min-width: 54px;
+    text-align: center;
+}
+.popupexitbutton:hover {
+    background-color:var(--blue);
+    color: white;
+}
+
+.popupsendbutton
+{
+    border: var(--golden) 2px solid; 
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder ;
+    margin-right: 5%;  
+    color: var(--golden); 
+    padding: 10px;
+    text-align: center;
+}
+.popupsendbutton:hover {
+    background-color:var(--golden);
+    color: white;
+}
+
+.button 
+{ display: flex;
+  align-items: center;
+    justify-content: center;
+margin-top: 50px;
+cursor: pointer;}
+
+.button button 
+{width: 80px;
+height: 25px;}
+.darkness 
+{position: fixed;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.753);
+top: 0px;
+right: 0px;
+display: none;}
+.taskDiv 
+{background-color: rgb(56, 60, 78);
+width: 100%;
+height: 80px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 1px;}
+.taskcontent 
+{ margin-top: 10px;
+    border: none;
+    appearance: none;
+background: none;
+outline: none;
+color: white;
+}
+
+.colordiv {
+    background-color: black;
+    width: 15px;
+    height: 100%;
+}
+
+.colortext 
+{background-color: green;
+width: 5px;
+height: 100%;}
+
+.hi{
+    display: flex;
+    flex-direction: column;
+}
+
+.textAreaContent{
+    border: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    width: 200px;
+    height: auto;
+    resize: none;
+    color: white;
+
+}
+
+.inputArea
+{display: flex;
+flex-direction: column;}
+
+.buttonDiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editButton, .deletebutton, .donebutton{
+ width: auto;
+ height: 30px;
+ padding: 2.5px;
+}
+.editButton:hover 
+{
+    background-color: var(--hover) ;
+    border-radius: 50%;
+}
+
+.deletebutton:hover {
+    background-color: var(--hover) ;
+border-radius: 50%;
+}
+.taskAndColorDiv
+{ display: flex;
+flex-direction: row;
+width: auto;
+height: auto;
+}
+
+
+.donebutton:hover 
+{ background-color: var(--hover) ;
+border-radius: 50%;}
+
+.footer 
+{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer h1 
+{
+    font-size: 13px;
+
+}
+.mediaIcons 
+{ width: auto;
+height: 25px;
+padding: 5px;
+border-radius: 50%;}
+.mediaIcons:hover 
+{
+background-color: var(--hover);
+}
+.donetasks 
+{border: black 1px solid; 
+border-right: none;
+min-height: 250px;
+margin-bottom: 50px;}
+.donetasks h1 , .toDoListArea h1
+{ color: var(--golden);
+text-align: center;}

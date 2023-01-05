@@ -1,0 +1,333 @@
+* {padding: 0px; margin: 0px;}
+
+.header
+{background-color: green;
+width: 100%; height: 110px;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.healthLogo
+{ width: 300px; height:auto;}
+
+.healthLogo:hover 
+{
+   width: 320px; height:auto;
+}
+
+.subheader 
+{width: 100%;
+height: 5px;
+background-color: goldenrod;}
+
+.banner { 
+    background-image:url('https://img.onmanorama.com/content/dam/mm/en/wellness/health/images/2018/2/2/healthycouple.jpg');
+    width: 100%; height: 350px;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 10px;
+}
+
+.mainContentArea
+{ padding-left: 20%;
+padding-right: 20%;
+margin-top: 50px;}
+
+.textAreah1Area, .aboutUsText
+{ text-align: center;
+margin-top: 25px;
+font-size: 25px;}
+.sub-title
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555555;
+}
+.textAreah1Area , .aboutUsTitleArea h1 
+{font-family:Arial, Helvetica, sans-serif;
+color: darkgreen;
+margin-bottom: 15px;}
+
+.BMICalculator 
+{ height: auto; width: auto;
+margin-bottom: 50px;
+margin-top: 50px;
+padding: 10px;}
+
+.BMICalculator legend
+{ background-color: green;
+color: white;
+font-weight: bolder;
+padding: 5px;
+border-radius: 5px;}
+.bmi-inputs
+{ display: flex;
+}
+
+.weightInput 
+{ margin-left: 10px;}
+
+.bmiButton button
+{margin-top: 10px;
+    background-color: rgb(57, 57, 221);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 14px;}
+
+    .bmiButton .restartButton 
+    { background-color: orangered;}
+    .bmiButton .restartButton:hover 
+    { background-color: rgb(180, 55, 10);}
+
+
+    .bmiButton button:hover
+    {background-color: rgb(0, 0, 150);
+        cursor: pointer;}
+
+.Underweight
+{display: none;}
+
+.HealthyWeight
+{display: none;}
+
+.Overweight
+{display: none;}
+
+.Obesity
+{display: none;}
+
+.morbidobesity
+{display: none;}
+
+.weighth1
+{ font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;}
+.weightp 
+{font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+}
+
+.weightbutton{
+    background-color: rgb(57, 57, 221);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.weightbutton:hover 
+{background-color: rgb(0, 0, 150);
+cursor: pointer;}
+
+.heightInput , .weightInput
+{padding: 8px; width: 80px;
+border: 1.5px solid darkgreen;
+border-radius: 8px;
+margin-right: 10px;}
+
+label 
+{   display:flex; 
+    flex-direction: column;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    color: darkgreen;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.result
+{
+    margin-top: 10px;
+    background-color: rgb(216, 145, 14);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(243, 236, 236);
+font-size: 20px;}  
+
+.divheight
+{background-color: rgba(67, 204, 108, 0.767);
+    padding: 8px; width: 80px;
+    border: 1.5px solid darkgreen;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;}
+
+    
+.pageinfo 
+ { margin-top: 25px;
+    margin-bottom: 25px;
+color: rgb(75, 74, 74);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+
+
+.pageinfo p 
+{ 
+ margin-bottom: 10px;
+font-weight: bolder;}
+
+.pageinfo a 
+{ 
+    text-decoration: none;
+    color: #555555;
+}
+
+.pageinfo a:hover
+{ text-decoration: underline} 
+
+.socialMediaIcon 
+{ width: auto;
+height: 22px;
+padding: 8px;}
+.socialMediaIcon:hover 
+{ background-color: #b1b1b1;
+border-radius: 8px;}
+
+.options
+{   top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+    position: fixed;    }
+.menu 
+{background-color: rgba(14, 119, 14, 0.842);
+height: 100vh;
+width: 0px;
+overflow-y: auto;
+overflow-x: hidden;
+transition: ease 0.5s;
+border-left: none;}
+
+.openMenuButton
+{
+    background-image: url("assets/menuIcon.png");
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu nav  
+{ 
+    display: flex;
+    justify-content: center;
+}
+.menu nav a
+{ text-decoration: none;
+color: black;
+list-style: none;
+margin-bottom: 25px;
+}
+
+.menu li 
+{padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;}
+.menu li:hover 
+{ background-color: darkgreen;}
+
+#home 
+{background-color: goldenrod;
+color: white;
+margin-top: 20px;
+font-weight: bolder;}
+
+.h1Title 
+{
+ font-family:Arial, Helvetica, sans-serif;
+color: darkgreen;
+margin-bottom: 15px;
+font-size: 50px;
+text-align: center;
+}
+    
+
+
+
+.footer 
+{width: 100%;
+height: auto;
+background-color: rgb(22, 21, 21);
+margin-top: 50px;
+display: flex;
+justify-content: center;}
+.footer div 
+{padding-top: 5px;}
+
+.footerSocialMediaTitle
+{color: white;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+font-weight: 100;}
+
+.tableArea 
+{ display: flex;
+    justify-content: center;
+width: 100%; height: auto;
+margin-top: 25px;}
+.BMITable 
+{ height: 250px;
+width: 400px;}
+.BMITable tbody tr:hover 
+{background-color: rgb(0, 0, 185);
+color: white}
+
+.BMITable tbody
+{ 
+    border: black solid 1px;
+    background-color: rgb(177, 205, 255);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.BMITable thead
+{
+    background-color: #006400;
+    color: white;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.healthDivs
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.healthIcons img 
+{
+    width: auto; height: 8  0px; }
+.knowMoreButton 
+{margin-top: 10px;
+     background-color:cornflowerblue;
+border: none;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+.knowMoreButton:hover 
+{
+    background-color: rgb(66, 112, 199);
+}
+

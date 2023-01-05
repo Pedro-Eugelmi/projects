@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bodymaxindex.css">
+    <title>Calculate your BMI</title>
+</head>
+<body>
+    
+
+   
+
+   <header class="header">
+        <div class="logoArea">
+            <a href=""><img class="healthLogo" src="assets/bodyHealthLogo.png"></a>
+        </div>
+
+        <aside class="options">   
+        <div class="openMenuButton" onclick="openMenu()">
+
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                   <a href="bodymaxindex.html"> <li id="home" >Home</li></a>
+                   <a onclick="scrollCalculator()" style="cursor:pointer" > <li>Calculator</li></a>
+                   <a href="aboutus.html"> <li>About us</li></a>
+                </ul>
+            </nav>
+
+        </div>
+    </aside>
+    
+    </header>
+    <div class="subheader"> </div>
+    
+    
+  
+   
+   
+    <div class="mainContentArea">
+        
+        <div class="textArea">
+            <div class="textAreah1Area">
+                <h1>Calculate your Body Mass Index </h1>
+               
+            </div>
+            <div>
+                <p class="sub-title">The BMI (body mass index) is the way to gauge whether your weight is in healthy proportion to your height
+                decreasing the changes of serious health consequences such as cardiovascular disease.
+                </p>
+                <div class="pageinfo">
+                    <div class="date-area">
+                         <p>By <a href="https://www.linkedin.com/in/pedro-mendon%C3%A7a-3124a323a/">Peter Eugelmi</a></p>
+                        <div class="date">
+                            <div class="thedate">Tue Dec 13 2022 22:09 (Brasilia Standard Time)</div>
+                        </div>
+                        <div class="blank">
+
+                        </div>
+                    </div>
+                    <div class="socialmedia-area">
+
+                        <a href="https://www.linkedin.com/in/pedro-mendon%C3%A7a-3124a323a/" target="_blank"><img class="socialMediaIcon" src="assets/linkedingIcon.png"></a>
+                        <a href="https://www.instagram.com/pedrogabrielmendy/" target="_blank"> <img src="assets/Instagramicon.jpg" class="socialMediaIcon"></a>
+                        <a href="https://www.facebook.com/pedro.gabriel.37604303/" target="_blank"><img src="assets/Facebookicon.png" class="socialMediaIcon"></a>
+                    
+
+                    </div>
+
+                </div>
+            </div> 
+            <hr style="margin-bottom: 25px;">
+         <div class="banner"> </div>
+        </div>
+
+        <fieldset class="BMICalculator">
+            <legend> BMI Calculator</legend>
+            <div class="bmi-inputs">
+               
+               
+
+                <div class="inputweight" >
+                    <label>Weight:</label>
+                    <input required placeholder="kilograms"  type="number" id="weight" class="weightInput">
+                
+                    <div class="bmiButton">
+                        <button onclick="BMICalculator()">Calculate</button>
+                    </div>
+
+                </div>
+                
+                <div class="inputarea" >
+                    <label>Height:</label>
+                    <input required placeholder="Meters" type="number" id="height" class="heightInput">
+                    <div class="bmiButton">
+                   
+                        <button class="restartButton" onclick="restartCalculator()">Restart</button>
+                     </div>
+                
+                </div>
+
+               
+            </div>
+        
+           <h1 class="result">Your BMI:<span></span></h1>
+
+            <div class="Underweight resultdiv">
+                    <h1 class="weighth1">Under weight</h1>
+                    <p class="weightp"> if you're underweight, it's likely that you're not eating a healthy, 
+                        balanced diet, which can lead to you lacking nutrients that your body needs to work properly.
+                    </p>
+                    <a href="https://www.wikihow.com/Gain-Weight-if-You-Are-Underweight"><button class="weightbutton">Get Help > </button></a>
+            </div>
+
+            <div class="HealthyWeight resultdiv">
+                <h1 class="weighth1">Healty Weight</h1>
+                    <p class="weightp"> Congratulations you are in a Healthy Weight keep like that
+                    </p>
+                    <a href="https://www.wikihow.com/Develop-Healthy-Eating-Habits"><button class="weightbutton">How to eat better</button></a>
+
+            </div>
+            <div class="Overweight resultdiv">
+                <h1 class="weighth1">Over Weight</h1>
+                    <p class="weightp"> if you're overweight, it's likely that you're not eating a healthy, 
+                        balanced diet, which can lead to you lacking nutrients that your body needs to work properly.
+                    </p>
+                    <a href="https://www.wikihow.com/Lose-Fat"><button  class="weightbutton">Get Help</button></a>
+
+            </div>
+            <div class="Obesity resultdiv">
+                <h1 class="weighth1">Obesity</h1>
+                    <p class="weightp"> if you're overweight, it's likely that you're not eating a healthy, 
+                        balanced diet, which can lead to you lacking nutrients that your body needs to work properly.
+                    </p>
+                    <a href="https://www.wikihow.com/Lose-Fat"><button class="weightbutton">Get Help</button ></a>
+            </div>
+            <div class="morbidobesity resultdiv">
+                <h1 class="weighth1">Morbidy Obesity</h1>
+                    <p class="weightp"> if you're overweight, it's likely that you're not eating a healthy, 
+                        balanced diet, which can lead to you lacking nutrients that your body needs to work properly.
+                    </p>
+                    <a href="https://www.wikihow.com/Lose-Fat"><button class="weightbutton">Get Help</button></a>
+
+            </div>
+        </fieldset>
+        <div>
+            <h1 class="h1Title"> How the calculator works</h1>
+            <p class="sub-title">
+                Body Mass Index is a simple calculation using a person’s height and weight. The formula is BMI = kg/m2 where kg is a person’s weight in kilograms and m2 is their height in metres squared.
+
+               <br><br> A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.
+            </p>
+
+            <div class="tableArea"> 
+                <table class="BMITable">
+                   <thead class=".theadTable">
+                     <tr>
+                         <th>BMI</th>
+                         <th>Classification</th>
+                            <th>Health Risk</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+
+                     <tr>
+                        <th> < 18.5 </th>
+                        <th>Underweight</th>
+                      <th>Minimal</th>
+                   </tr>
+
+                   <tr>
+                        <th> 18.5 - 24.9 </th>
+                      <th>Health Weight</th>
+                       <th>Minimal</th>
+                     </tr>
+
+                  <tr>
+                       <th> 25 - 29.9 </th>
+                      <th>Overweight</th>
+                       <th>increased</th>
+                  </tr>
+
+                 <tr>
+                       <th> 30 - 34.9 </th>
+                      <th>Obese</th>
+                        <th>High</th>
+                  </tr>
+
+                  <tr>
+                        <th>35 - 39.9  </th>
+                        <th>Severely Obese</th>
+                     <th>Very High</th>
+                 </tr>
+
+                 <tr>
+                     <th> > 40  </th>
+                        <th>Morbidly Obese</th>
+                      <th>Extremely High</th>
+                 </tr>
+                </tbody>
+
+
+             </table>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h5 class="footerSocialMediaTitle">Social Media:</h5>
+                <a href="https://www.linkedin.com/in/pedro-mendon%C3%A7a-3124a323a/" target="_blank"><img class="socialMediaIcon" src="assets/linkedingIcon.png"></a>
+                <a href="https://www.instagram.com/pedrogabrielmendy/" target="_blank"> <img src="assets/Instagramicon.jpg" class="socialMediaIcon"></a>
+                <a href="https://www.facebook.com/pedro.gabriel.37604303/" target="_blank"><img src="assets/Facebookicon.png" class="socialMediaIcon"></a>
+
+                </div>
+            </div>
+                
+            
+
+        </div>
+    </footer>
+    
+    
+ 
+    <script src="bodymaxindex.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

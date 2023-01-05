@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet"  href="todolist.css" >
+    <link rel="icon" type="image/png" href="Assets/Taskinfavcon.png" />
+</head>
+<body>
+
+    <header class="header">
+        <a href="todolist.html"><img class="logo" src="assets/taskinglogo.png"></a>
+    </header>
+
+
+<div class="main">
+    <div class="addTask">
+
+        <div class="addTaskButton" onclick="addTask()"><img src="assets/add.png"></div>
+
+    </div>
+
+    <div class="toDoListArea">
+        <h1>Tasks to do</h1>
+
+    </div>
+
+
+
+
+    <div class="donetasks">
+       
+        <h1>Done Tasks</h1>
+
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div>
+        <h1>Social Media</h1>
+    </div>
+    <div class="socialMediaIcons">
+        <a target="_blank" href="https://www.facebook.com/pedro.gabriel.37604303/"><img class="mediaIcons" src="assets/Facebookicon.png"></a>
+        <a target="_blank" href="https://www.instagram.com/pedrogabrielmendy/"><img class="mediaIcons" src="assets/Instagramicon.jpg"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/pedro-mendon%C3%A7a-3124a323a/"><img class="mediaIcons" src="assets/linkedingIcon.png"></a>
+
+    </div>
+</footer>
+
+
+
+
+<div class="addTaskPopUp">
+    <div class="taskPopUpTitle">
+        <h1>Add a new task</h1>
+    </div>
+    <div class="taskName">
+        <label class="popupLabel">Task Name:</label>
+        <input placeholder="Write your task..." class="tasknameinput" type="text">
+    </div>
+
+    <div class="taskDescription">
+        <label class="popupLabel">Task Description</label>
+        <textarea class="description" maxlength="54" placeholder="Details of your task..."></textarea>
+     </div>
+
+    <div class="taskColor">
+        <label class="popupLabel">Task Color:</label>
+        <input class="getcolor" type="color">
+
+    </div>
+
+    <div class="button">
+       <div class="popupexitbutton" onclick="closeTask()">Exit</div>
+        <div class="popupsendbutton" onclick="sendTask()"> Send it</div>
+    </div>
+
+</div >
+
+
+<div class="darkness">
+
+</div>
+
+
+<script src="todolist.js"></script>
+</body>
+</html>
